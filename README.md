@@ -1,2 +1,1 @@
-# bf-sun8i
-kernel sun8i
+# linux sun8i

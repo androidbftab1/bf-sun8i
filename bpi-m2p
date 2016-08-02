@@ -1,0 +1,8 @@
+export BOARD=bpi-m2p
+export ARCH=arm
+export CROSS_COMPILE=arm-linux-gnueabihf-
+export LOCALVERSION="-sun8i"
+make sun8iw7p1smp_bpi_defconfig
+make -j8 uImage
+make -j8 modules
+make -j8 INSTALL_MOD_PATH=output modules_install
